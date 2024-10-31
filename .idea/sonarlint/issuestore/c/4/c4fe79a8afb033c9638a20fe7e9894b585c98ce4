@@ -1,3 +1,7 @@
 
-r	java:S1063"+Replace this use of System.out by a logger.(ƒìîüıÿÿÿÿ8ÛÙ‚Í­2J$a9ab3138-23e5-48dd-8955-8a10b5acf502
-r	java:S1066"+Replace this use of System.out by a logger.(ƒìîüıÿÿÿÿ8İÙ‚Í­2J$1349af5b-476e-4741-935c-1b3694d6b750
+Ä
+java:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8Ğï¤˜®2J$be6717bb-f559-48c9-a8ad-760fa73dd90f
+u
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ùï¤˜®2J$d160d17e-3161-45d0-9b2b-01e6eeaef51a
+u
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8üï¤˜®2J$6162e6b0-29d2-49f2-92aa-aaa257d89614

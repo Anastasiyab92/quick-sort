@@ -3,15 +3,17 @@ import java.util.Random;
 
 
 public class QuickSort {
-    public static void quickSort(int[] arr, int low, int high) {
+
+    public static void executeQuickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
             // call recursion to sort left and right parts
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
+            executeQuickSort(arr, low, pi - 1);
+            executeQuickSort(arr, pi + 1, high);
 
         }
     }
+
     private static int partition(int[] arr, int low, int high) {
         //choice a pivot element
         int middle = low + (high - low) / 2;
@@ -37,21 +39,9 @@ public class QuickSort {
         arr[high] = temp;
 
         return i + 1;
-
     }
 
     public static void main(String[] args) {
-        Random random = new Random();
-        int[] array = new int[20];
 
-        for (int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(100);
-        }
-        //before quickSort
-        System.out.println(Arrays.toString(array));
-        quickSort(array, 0, array.length-1);
-        //after quickSort
-        System.out.println(Arrays.toString(array));
     }
-
 }
