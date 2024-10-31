@@ -42,6 +42,16 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
+        Random random = new Random();
+        int[] array = new int[20];
 
+        for (int i = 0; i < array.length; i++){
+            array[i] = random.nextInt(100);
+        }
+        //before quickSort
+        System.out.println(Arrays.toString(array));
+        executeQuickSort(array, 0, array.length-1);
+        //after quickSort
+        System.out.println(Arrays.toString(array));
     }
 }
